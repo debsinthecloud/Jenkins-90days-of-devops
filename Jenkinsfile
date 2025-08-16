@@ -9,11 +9,12 @@ pipeline {
         }
         stage('Run Container') {
             steps {
-                // If already running, stop it first
-                sh '''
-                    docker ps -q --filter "name=myapp" | grep -q . && docker stop myapp && docker rm myapp || true
-                    docker run -d --name myapp -p 8080:8080 myapp:latest
-                '''
+                // Stop and remove the old container if it exists
+                sh 'docker stop myapp || true'
+                sh 'docker rm myapp || true'
+
+                // Run the new container
+                sh 'docker run -d --name myapp -p 8080:8080 myapp:latest'
             }
         }
     }

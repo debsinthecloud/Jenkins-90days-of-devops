@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Declarative: Checkout SCM') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t myapp:latest .'
@@ -9,22 +14,16 @@ pipeline {
         }
         stage('Run Container') {
             steps {
-                // Stop and remove the old container if it exists
-                sh 'docker stop myapp || true'
+                sh 'docker stop myapp || true' // Use '|| true' to prevent failure if container doesn't exist
                 sh 'docker rm myapp || true'
-
-                // Run the new container
-                sh 'docker run -d --name myapp -p 8080:8080 myapp:latest'
+                sh 'docker run -d --name myapp -p 8082:8080 myapp:latest'
+            }
+        }
+        stage('Declarative: Post Actions') {
+            steps {
+                echo "✅ Pipeline completed successfully. Your app is now running on port 8082."
             }
         }
     }
-
-    post {
-        success {
-            echo '✅ Docker image built and container running!'
-        }
-        failure {
-            echo '❌ Something went wrong with the Docker pipeline.'
-        }
-    }
 }
+

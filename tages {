@@ -1,0 +1,60 @@
+[33mcommit 907cb90b7a68fe0cd7d700ddedc1cc4764925821[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Sat Aug 16 16:18:26 2025 -0700
+
+    Add Jenkinsfile for Docker build pipeline
+
+[33mcommit 4ba49cdc5c01a5148437c7603acb563908c650bb[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Sat Aug 16 16:01:18 2025 -0700
+
+    Add Jenkinsfile for Docker build pipeline
+
+[33mcommit 6055aaaef19978ee0d6357c25eaa4f179b8b3fc8[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Sat Aug 16 15:53:20 2025 -0700
+
+    Add Dockerfile for Jenkins build
+
+[33mcommit 6533b9752e6094ab64e6c90e32b24ab925ef7e37[m
+Merge: ba0470f a69fde3
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Thu Aug 14 16:41:13 2025 -0700
+
+    Merge branch 'main' of https://github.com/debsinthecloud/Jenkins-92days-of-devops
+
+[33mcommit ba0470fcfe908b8f964b535abfd46e5e9026703e[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Thu Aug 14 16:34:47 2025 -0700
+
+    Add docker-compose.yml for Jenkins build
+
+[33mcommit a69fde312c4e536ded15a1a4793624f6a885db9a[m
+Author: debsinthecloud <113190759+debsinthecloud@users.noreply.github.com>
+Date:   Wed Aug 13 16:58:24 2025 -0700
+
+    Update README.md
+
+[33mcommit a8e5af00b62dfad9dbe8d2d8a94444532edad599[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Wed Aug 13 16:49:52 2025 -0700
+
+    Add package.json and index.js
+
+[33mcommit 557e62d73a2a9116bd83f8e586cfbeae6a66cba2[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Wed Aug 13 16:24:40 2025 -0700
+
+    Populate Dockerfile with build instructions
+
+[33mcommit be1eb96abc7f3c08a645adc951060d8387170244[m
+Author: debsinthecloud <dabrageorge@gmail.com>
+Date:   Wed Aug 13 16:12:01 2025 -0700
+
+    Add Dockerfile for Jenkins build
+
+[33mcommit 3fff41d459ac5468c79d962b5e52b3cd465fcd19[m
+Author: debsinthecloud <113190759+debsinthecloud@users.noreply.github.com>
+Date:   Wed Aug 13 14:27:12 2025 -0700
+
+    Initial commit
